@@ -59,7 +59,7 @@
     </build>
     
    	<dependencies>
-		 <dependency>
+		<dependency>
 			<groupId>tr.com.serkanozal</groupId>
 			<artifactId>jillegal-core</artifactId>
 			<version>${jillegal.core.version}</version>
