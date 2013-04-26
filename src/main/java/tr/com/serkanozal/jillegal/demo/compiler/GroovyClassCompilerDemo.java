@@ -10,7 +10,7 @@ package tr.com.serkanozal.jillegal.demo.compiler;
 import tr.com.serkanozal.jillegal.compiler.domain.model.DefaultCodeType;
 import tr.com.serkanozal.jillegal.compiler.exception.ClassCompileException;
 import tr.com.serkanozal.jillegal.compiler.factory.ClassCompilerFactory;
-import tr.com.serkanozal.jillegal.compiler.factory.DefaultClassCompilerFactory;
+import tr.com.serkanozal.jillegal.compiler.factory.ClassCompilerFactoryProvider;
 import tr.com.serkanozal.jillegal.core.Jillegal;
 
 public class GroovyClassCompilerDemo {
@@ -20,7 +20,7 @@ public class GroovyClassCompilerDemo {
 	}
 	
 	public static void main(String[] args) throws ClassCompileException, InstantiationException, IllegalAccessException {
-		ClassCompilerFactory classCompilerFactory = new DefaultClassCompilerFactory();
+		ClassCompilerFactory classCompilerFactory = ClassCompilerFactoryProvider.getClassCompilerFactory();
 		
 		String code = 
 				"package tr.com.serkanozal.jillegal.compiler;"+ "\n" +
